@@ -7,5 +7,7 @@ long_description 'Installs/Configures dfdevm_polymer'
 version '0.1.0'
 
 depends 'git'
+depends 'df_java'
 depends 'nodejs'
 depends 'df_node_fix'
+depends 'df_yeoman'
