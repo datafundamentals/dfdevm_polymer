@@ -3,15 +3,16 @@ driver:
   name: vagrant
   synced_folders: 
   - ["~/shuttle","/opt/shuttle"]
+  - ["~/work/polymer","/home/vagrant/polymer"]
 
 provisioner:
   name: chef_zero
 
 platforms:
-- name: box-cutter-VAGRANTSLASH-ubuntu1404-desktop
+- name: boxcutter-VAGRANTSLASH-ubuntu1404-desktop
   driver_config:
-    box: box-cutter-VAGRANTSLASH-ubuntu1404-desktop
-    box_url: ~/Vagrant\ boxes/box-cutter-VAGRANTSLASH-ubuntu1404-desktop
+    box: boxcutter-VAGRANTSLASH-ubuntu1404-desktop
+    box_url: ~/Vagrant\ boxes/boxcutter-VAGRANTSLASH-ubuntu1404-desktop
 
 suites:
   - name: dfdevm_polymer
