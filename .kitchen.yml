@@ -2,17 +2,17 @@
 driver:
   name: vagrant
   synced_folders: 
-  - ["~/shuttle","/opt/shuttle"]
+  - ["~/shuttle","/home/vagrant/shuttle"]
   - ["~/work/polymer","/home/vagrant/polymer"]
 
 provisioner:
   name: chef_zero
 
 platforms:
-- name: boxcutter-VAGRANTSLASH-ubuntu1404-desktop
-  driver_config:
-    box: boxcutter-VAGRANTSLASH-ubuntu1404-desktop
-    box_url: ~/Vagrant\ boxes/boxcutter-VAGRANTSLASH-ubuntu1404-desktop
+  - name: centos-7.1
+    driver:
+      network:
+      - ["private_network", {ip: "192.168.33.44"}]
 
 suites:
   - name: dfdevm_polymer

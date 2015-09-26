@@ -1,5 +1,5 @@
 include_recipe "git"
-include_recipe "df_java"
+include_recipe "java"
 include_recipe "nodejs::nodejs_from_binary"
 include_recipe "df_node_fix"
 include_recipe "df_yeoman"
